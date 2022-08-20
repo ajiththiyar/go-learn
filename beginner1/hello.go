@@ -2,6 +2,8 @@ package main
 
 import "fmt"
 
+var y int
+
 func main() {
 	value, e := fmt.Println("Hello, अश्वत्थामा")
 	fmt.Println(value, e)
@@ -14,6 +16,11 @@ func main() {
 		}
 		fmt.Println("Odd", i)
 	}
+	y = 39
+	fmt.Printf("Binary: %b\n", y)
+	fmt.Printf("Hex: %x\n", y)
+	fmt.Printf("Hex: %#x\n", y)
+
 }
 
 func foo() {
