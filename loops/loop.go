@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("")
 
 	// create an array
-	numbers := [5]int{11, 22, 33, 44, 55}
+	numbers := []int{11, 22, 33, 44, 55}
 
 	// for loop with range
 	for index := range numbers {
@@ -35,5 +35,19 @@ func main() {
 	fmt.Println("Slicing")
 	fmt.Println(numbers[2:])
 	fmt.Println(numbers[2:3])
+
+	morenumbers := []int{3, 4, 5, 6, 3}
+
+	morenumbers = append(morenumbers, 53, 55, 34, 31)
+
+	for _, value := range morenumbers {
+		fmt.Println(value)
+	}
+	fmt.Println("dfgjkaldfgjfls;kdgjhkl;dfghjsdfghljk")
+	numbers = append(numbers, morenumbers...)
+
+	for _, value := range numbers {
+		fmt.Println(value)
+	}
 
 }
