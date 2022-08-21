@@ -32,4 +32,8 @@ func main() {
 		fmt.Printf("%#U\n", i)
 	}
 
+	fmt.Println("Slicing")
+	fmt.Println(numbers[2:])
+	fmt.Println(numbers[2:3])
+
 }
